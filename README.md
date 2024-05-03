@@ -1,8 +1,8 @@
 <p align="center">
    <br/>
-   <a href="https://developers.sitecore.com/contribute" target="_blank"><img width="150px" src="/src/assets/sitecore.png" /></a>
-   <h3 align="center">Sitecore Headless Development</h3>
+   <h2 align="center">Sitecore Headless Development</h2>
    <p align="center">
+     Sitecore JavaScript Services (JSS) 
    </p>
   
   
