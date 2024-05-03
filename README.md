@@ -2,6 +2,7 @@
    <br/>
    <a href="https://developers.sitecore.com/contribute" target="_blank"><img width="150px" src="/src/assets/sitecore.png" /></a>
    </p>
+   <p><h2>JSS</h2></p>
   
 
 ## Build Prerequisites
