@@ -24,15 +24,26 @@ TWITTER_BEARER_TOKEN="A bearer token from Twitter "
 
 ## Getting Started
 
-### 1. Install Node.js, we recommend the LTS version.
+1. Install Node.js, we recommend the LTS version.
 
-### 2. Clone the repository git clone https://github.com/Sitecore/developer-portal.git
+2. Clone the repository git clone https://github.com/Sitecore/developer-portal.git
 
-Copy the .env.local.example file in this directory to .env.local (which will be ignored by Git):
+3. Inside the repository run npm install to install all the dependencies.
+
+4. Create a .env.local file in the root of the project and add the following environment variables
+```
+YOUTUBE_API_KEY=""
+TWITTER_BEARER_TOKEN="
 
 ```
-cp .env.local.example .env.local
-```
+> _For more information on populating environment variables see section Environment Variables above._
+
+5. Run npm run dev to start the development server.
+
+6. Open the http://localhost:3000 in your browser to see the result!
+
+
+
 
 Add details for one or more providers (e.g. Google, Twitter, GitHub, Email, etc).
 
