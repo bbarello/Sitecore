@@ -15,23 +15,18 @@ The developer portal is built with Next.js, so you'll need to have Node.js insta
 The Sitecore developer portal incorporates a number of third party services to bring in content. For full functionality, you must create a .env.local file in the root of the project and add in the below environment variables.
 
 The following variables should exist within the .env.local file:
-
+```
 YOUTUBE_API_KEY="An API key with YouTube Data API v3 access enabled"
 TWITTER_BEARER_TOKEN="A bearer token from Twitter "
 
+```
 > _Note: The site will still function without the above keys. The components that require these environment variables will fail gracefully and not display on the pages._
 
 ## Getting Started
 
-### 1. Clone the repository and install dependencies
+### 1. Install Node.js, we recommend the LTS version.
 
-```
-git clone https://github.com/nextauthjs/next-auth-example.git
-cd next-auth-example
-npm install
-```
-
-### 2. Configure your local environment
+### 2. Clone the repository git clone https://github.com/Sitecore/developer-portal.git
 
 Copy the .env.local.example file in this directory to .env.local (which will be ignored by Git):
 
