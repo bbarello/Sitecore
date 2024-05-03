@@ -1,5 +1,5 @@
 About this portal
-The Sitecore developer portal is built using Next.js and Chakra UI, and is hosted on Vercel. The application uses static site generation to create all the pages at build time. It also utilizes Incremental Static Regeneration (ISR) to automatically update the app when changes to page content are made. Much of the page content is written in Markdown and is converted to HTML at build time. Images that are used are managed in Sitecore DAM and are published to a CDN.
+The Sitecore is built using Next.js and Chakra UI, and is hosted on Vercel. The application uses static site generation to create all the pages at build time. It also utilizes Incremental Static Regeneration (ISR) to automatically update the app when changes to page content are made. Much of the page content is written in Markdown and is converted to HTML at build time. Images that are used are managed in Sitecore DAM and are published to a CDN.
 
 All code for this project can be found in the public GitHub repository.
 
