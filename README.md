@@ -45,6 +45,4 @@ TWITTER_BEARER_TOKEN="
 
 <p align="left">Thanks to Vercel sponsoring this project by allowing it to be deployed for free for the entire NextAuth.js Team</p>
 
-## License
 
-ISC
