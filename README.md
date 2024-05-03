@@ -1,9 +1,8 @@
 <p align="center">
    <br/>
    <a href="https://developers.sitecore.com/contribute" target="_blank"><img width="150px" src="/src/assets/sitecore.png" /></a>
-   <h3 align="center">Sitecore</h3>
+   <h3 align="center">Sitecore Headless Development</h3>
    <p align="center">
-   Open Source. Full Stack. Own Your Data.
    </p>
   
   
