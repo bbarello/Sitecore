@@ -1,12 +1,11 @@
 <p align="center">
    <br/>
    <a href="https://developers.sitecore.com/contribute" target="_blank"><img width="150px" src="/src/assets/sitecore.png" /></a>
-   <h1>Sitecore Headless Development</h1>
    </p>
   
   
 
-## Build Prerequisites
+## Sitecore Headless Development - Build Prerequisites
 
 ### 1. Node.js
 
