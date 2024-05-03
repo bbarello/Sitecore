@@ -4,21 +4,22 @@
    </p>
   
 
-## Overview
+## Build Prerequisites
 
-NextAuth.js is a complete open source authentication solution.
+### Node.js
 
-This is an example application that shows how `next-auth` is applied to a basic Next.js app.
+The developer portal is built with Next.js, so you'll need to have Node.js installed to build the project. You can find the latest version of Node.js here. We recommend using the LTS version of Node.js.
 
-The deployed version can be found at [`next-auth-example.vercel.app`](https://next-auth-example.vercel.app)
+### Environment Variables
 
-### About NextAuth.js
+The Sitecore developer portal incorporates a number of third party services to bring in content. For full functionality, you must create a .env.local file in the root of the project and add in the below environment variables.
 
-NextAuth.js is an easy to implement, full-stack (client/server) open source authentication library originally designed for [Next.js](https://nextjs.org) and [Serverless](https://vercel.com). Our goal is to [support even more frameworks](https://github.com/nextauthjs/next-auth/issues/2294) in the future.
+The following variables should exist within the .env.local file:
 
-Go to [next-auth.js.org](https://authjs.dev) for more information and documentation.
+YOUTUBE_API_KEY="An API key with YouTube Data API v3 access enabled"
+TWITTER_BEARER_TOKEN="A bearer token from Twitter "
 
-> _NextAuth.js is not officially associated with Vercel or Next.js._
+> _Note: The site will still function without the above keys. The components that require these environment variables will fail gracefully and not display on the pages._
 
 ## Getting Started
 
