@@ -1,8 +1,9 @@
 <p align="center">
    <br/>
    <a href="https://developers.sitecore.com/contribute" target="_blank"><img width="150px" src="/src/assets/sitecore.png" /></a>
+   <h1>Sitecore Headless Development</h1>
    </p>
-   <p><h2>JSS</h2></p>
+  
   
 
 ## Build Prerequisites
