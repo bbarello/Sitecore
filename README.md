@@ -2,9 +2,8 @@
 <p align="center">
    <br/>
    <a href="https://developers.sitecore.com/contribute" target="_blank"><img width="150px" src="/src/assets/sitecore.png" /></a>
-   <h1 align="center">SITECORE</h1>
    <p align="center">
-   Open Source. Full Stack. Own Your Data.
+   Sitecore JavaScript Services (JSS) 
    </p>
   
   
