@@ -6,11 +6,11 @@
 
 ## Build Prerequisites
 
-### Node.js
+### 1. Node.js
 
 The developer portal is built with Next.js, so you'll need to have Node.js installed to build the project. You can find the latest version of Node.js here. We recommend using the LTS version of Node.js.
 
-### Environment Variables
+### 2. Environment Variables
 
 The Sitecore developer portal incorporates a number of third party services to bring in content. For full functionality, you must create a .env.local file in the root of the project and add in the below environment variables.
 
