@@ -43,6 +43,4 @@ TWITTER_BEARER_TOKEN="
 6. Open the http://localhost:3000 in your browser to see the result!
 
 
-<p align="left">Thanks to Vercel sponsoring this project by allowing it to be deployed for free for the entire NextAuth.js Team</p>
-
 
