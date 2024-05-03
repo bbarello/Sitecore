@@ -1,49 +1,99 @@
-About this portal
-The Sitecore is built using Next.js and Chakra UI, and is hosted on Vercel. The application uses static site generation to create all the pages at build time. It also utilizes Incremental Static Regeneration (ISR) to automatically update the app when changes to page content are made. Much of the page content is written in Markdown and is converted to HTML at build time. Images that are used are managed in Sitecore DAM and are published to a CDN.
+> The Sitecore is built using Next.js and Chakra UI, and is hosted on Vercel. The application uses static site generation to create all the pages at build time. It also utilizes Incremental Static Regeneration (ISR) to automatically update the app when changes to page content are made. Much of the page content is written in Markdown and is converted to HTML at build time. Images that are used are managed in Sitecore DAM and are published to a CDN.
+.
 
-All code for this project can be found in the public GitHub repository.
+<p align="center">
+   <br/>
+   <a href="https://developers.sitecore.com/contribute" target="_blank"><img width="150px" src="/src/assets/sitecore.png" /></a>
+   <h3 align="center">Sitecore</h3>
+   <p align="center">
+   Open Source. Full Stack. Own Your Data.
+   </p>
+  
 
-Build Prerequisites
-Node.js
-The developer portal is built with Next.js, so you'll need to have Node.js installed to build the project. You can find the latest version of Node.js here. We recommend using the LTS version of Node.js.
+## Overview
 
-Environment Variables
-The Sitecore developer portal incorporates a number of third party services to bring in content. For full functionality, you must create a .env.local file in the root of the project and add in the below environment variables.
+NextAuth.js is a complete open source authentication solution.
 
-The following variables should exist within the .env.local file:
+This is an example application that shows how `next-auth` is applied to a basic Next.js app.
 
-YOUTUBE_API_KEY="An API key with YouTube Data API v3 access enabled"
-TWITTER_BEARER_TOKEN="A bearer token from Twitter "
-Note: The site will still function without the above keys. The components that require these environment variables will fail gracefully and not display on the pages.
+The deployed version can be found at [`next-auth-example.vercel.app`](https://next-auth-example.vercel.app)
 
-Getting Started
-Install Node.js, we recommend the LTS version.
-Clone the repository git clone https://github.com/Sitecore/developer-portal.git
-Inside the repository run npm install to install all the dependencies.
-Create a .env.local file in the root of the project and add the following environment variables:
-YOUTUBE_API_KEY=""
-TWITTER_BEARER_TOKEN=""
-(For more information on populating environment variables see section Environment Variables above.)
+### About NextAuth.js
 
-Run npm run dev to start the development server.
-Open the http://localhost:3000 in your browser to see the result!
-Contributions
-We are very grateful to the community for contributing bug fixes and improvements. We welcome all efforts to evolve and improve the Sitecore Developer Portal; read below to learn how to participate in those efforts.
+NextAuth.js is an easy to implement, full-stack (client/server) open source authentication library originally designed for [Next.js](https://nextjs.org) and [Serverless](https://vercel.com). Our goal is to [support even more frameworks](https://github.com/nextauthjs/next-auth/issues/2294) in the future.
 
-Code of Conduct
-Sitecore has adopted a Code of Conduct that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
+Go to [next-auth.js.org](https://authjs.dev) for more information and documentation.
 
-Feedback, ideas or found issues?
-The Sitecore Developer Portal is under constant development. Do you have any feedback or ideas that can improve the developer portal please let us know! Create an issue in our GitHub repository. Please use the issue or feature request template, label it accordingly and we will review your ticket and follow up if necessary.
+> _NextAuth.js is not officially associated with Vercel or Next.js._
 
-Contributing Guide
-If you want to make changes to the code, follow these steps:
+## Getting Started
 
-Fork the Developer Portal Repo GitHub repo.
-Clone the forked repo to your local machine.
-Create a feature branch from main for your changes. e.g. git checkout -b my-feature-branch
+### 1. Clone the repository and install dependencies
+
+```
+git clone https://github.com/nextauthjs/next-auth-example.git
+cd next-auth-example
 npm install
-npm run dev (to preview your changes locally)
-Make your changes (if you changes include images please use the public/images folder to store the image(s))
-Commit, push to your remote fork of the Developer Portal repo, then open a pull request (PR) to the main branch of the Developer Portal repo.
-Your changes will be reviewed and merged if appropriate.
+```
+
+### 2. Configure your local environment
+
+Copy the .env.local.example file in this directory to .env.local (which will be ignored by Git):
+
+```
+cp .env.local.example .env.local
+```
+
+Add details for one or more providers (e.g. Google, Twitter, GitHub, Email, etc).
+
+#### Database
+
+A database is needed to persist user accounts and to support email sign in. However, you can still use NextAuth.js for authentication without a database by using OAuth for authentication. If you do not specify a database, [JSON Web Tokens](https://jwt.io/introduction) will be enabled by default.
+
+You **can** skip configuring a database and come back to it later if you want.
+
+For more information about setting up a database, please check out the following links:
+
+- Docs: [authjs.dev/reference/core/adapters](https://authjs.dev/reference/core/adapters)
+
+### 3. Configure Authentication Providers
+
+1. Review and update options in `auth.ts` as needed.
+
+2. When setting up OAuth, in the developer admin page for each of your OAuth services, you should configure the callback URL to use a callback path of `{server}/api/auth/callback/{provider}`.
+
+e.g. For Google OAuth you would use: `http://localhost:3000/api/auth/callback/google`
+
+A list of configured providers and their callback URLs is available from the endpoint `api/auth/providers`. You can find more information at https://authjs.dev/getting-started/providers/oauth-tutorial
+
+1. You can also choose to specify an SMTP server for passwordless sign in via email.
+
+### 4. Start the application
+
+To run your site locally, use:
+
+```
+npm run dev
+```
+
+To run it in production mode, use:
+
+```
+npm run build
+npm run start
+```
+
+### 5. Preparing for Production
+
+Follow the [Deployment documentation](https://authjs.dev/getting-started/deployment)
+
+## Acknowledgements
+
+<a href="https://vercel.com?utm_source=nextauthjs&utm_campaign=oss">
+<img width="170px" src="https://raw.githubusercontent.com/nextauthjs/next-auth/main/docs/static/img/powered-by-vercel.svg" alt="Powered By Vercel" />
+</a>
+<p align="left">Thanks to Vercel sponsoring this project by allowing it to be deployed for free for the entire NextAuth.js Team</p>
+
+## License
+
+ISC
